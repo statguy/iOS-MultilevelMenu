@@ -1,5 +1,5 @@
 //
-//  MultilevelMenu.h
+//  CNPMultilevelMenuItemFactory.h
 //  MultilevelMenu
 //
 //  Created by Jussi on 14/12/2013.
@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CNPMultilevelMenuItem.h"
 
-@interface MultilevelMenu : NSObject
+@interface CNPMultilevelMenuItemFactory : NSObject
+
+- (CNPMultilevelMenuItem *)newMenuItem;
 
 @end

@@ -8,25 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		8F252A97185C306200FA0618 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F252A96185C306200FA0618 /* Foundation.framework */; };
-		8F252A9C185C306200FA0618 /* MultilevelMenu.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8F252A9B185C306200FA0618 /* MultilevelMenu.h */; };
-		8F252A9E185C306200FA0618 /* MultilevelMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F252A9D185C306200FA0618 /* MultilevelMenu.m */; };
-		8F252AA5185C306200FA0618 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F252AA4185C306200FA0618 /* XCTest.framework */; };
-		8F252AA6185C306200FA0618 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F252A96185C306200FA0618 /* Foundation.framework */; };
-		8F252AA8185C306200FA0618 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F252AA7185C306200FA0618 /* UIKit.framework */; };
-		8F252AAB185C306200FA0618 /* libMultilevelMenu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F252A93185C306200FA0618 /* libMultilevelMenu.a */; };
-		8F252AB1185C306200FA0618 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F252AAF185C306200FA0618 /* InfoPlist.strings */; };
-		8F252AB3185C306200FA0618 /* MultilevelMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F252AB2185C306200FA0618 /* MultilevelMenuTests.m */; };
+		8F252A9C185C306200FA0618 /* CNPMultilevelMenu.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8F252A9B185C306200FA0618 /* CNPMultilevelMenu.h */; };
+		8F252A9E185C306200FA0618 /* CNPMultilevelMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F252A9D185C306200FA0618 /* CNPMultilevelMenu.m */; };
+		8F252ABD185C31BF00FA0618 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F252ABC185C31BF00FA0618 /* libxml2.dylib */; };
+		8F252AC0185C328200FA0618 /* CNPMultilevelMenuItemFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F252ABF185C328200FA0618 /* CNPMultilevelMenuItemFactory.m */; };
+		8F252AC3185C32EB00FA0618 /* CNPMultilevelMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F252AC2185C32EB00FA0618 /* CNPMultilevelMenuItem.m */; };
+		8F252AC6185C422400FA0618 /* CNPMultilevelMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F252AC5185C422400FA0618 /* CNPMultilevelMenuViewController.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		8F252AA9185C306200FA0618 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8F252A8B185C306200FA0618 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8F252A92185C306200FA0618;
-			remoteInfo = MultilevelMenu;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		8F252A91185C306200FA0618 /* CopyFiles */ = {
@@ -35,7 +23,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				8F252A9C185C306200FA0618 /* MultilevelMenu.h in CopyFiles */,
+				8F252A9C185C306200FA0618 /* CNPMultilevelMenu.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,14 +33,17 @@
 		8F252A93185C306200FA0618 /* libMultilevelMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMultilevelMenu.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F252A96185C306200FA0618 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8F252A9A185C306200FA0618 /* MultilevelMenu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MultilevelMenu-Prefix.pch"; sourceTree = "<group>"; };
-		8F252A9B185C306200FA0618 /* MultilevelMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultilevelMenu.h; sourceTree = "<group>"; };
-		8F252A9D185C306200FA0618 /* MultilevelMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultilevelMenu.m; sourceTree = "<group>"; };
-		8F252AA3185C306200FA0618 /* MultilevelMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultilevelMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F252A9B185C306200FA0618 /* CNPMultilevelMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNPMultilevelMenu.h; sourceTree = "<group>"; };
+		8F252A9D185C306200FA0618 /* CNPMultilevelMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNPMultilevelMenu.m; sourceTree = "<group>"; };
 		8F252AA4185C306200FA0618 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8F252AA7185C306200FA0618 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		8F252AAE185C306200FA0618 /* MultilevelMenuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultilevelMenuTests-Info.plist"; sourceTree = "<group>"; };
-		8F252AB0185C306200FA0618 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8F252AB2185C306200FA0618 /* MultilevelMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultilevelMenuTests.m; sourceTree = "<group>"; };
+		8F252ABC185C31BF00FA0618 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		8F252ABE185C328200FA0618 /* CNPMultilevelMenuItemFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNPMultilevelMenuItemFactory.h; sourceTree = "<group>"; };
+		8F252ABF185C328200FA0618 /* CNPMultilevelMenuItemFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNPMultilevelMenuItemFactory.m; sourceTree = "<group>"; };
+		8F252AC1185C32EB00FA0618 /* CNPMultilevelMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNPMultilevelMenuItem.h; sourceTree = "<group>"; };
+		8F252AC2185C32EB00FA0618 /* CNPMultilevelMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNPMultilevelMenuItem.m; sourceTree = "<group>"; };
+		8F252AC4185C422400FA0618 /* CNPMultilevelMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNPMultilevelMenuViewController.h; sourceTree = "<group>"; };
+		8F252AC5185C422400FA0618 /* CNPMultilevelMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNPMultilevelMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,18 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F252ABD185C31BF00FA0618 /* libxml2.dylib in Frameworks */,
 				8F252A97185C306200FA0618 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8F252AA0185C306200FA0618 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8F252AA5185C306200FA0618 /* XCTest.framework in Frameworks */,
-				8F252AAB185C306200FA0618 /* libMultilevelMenu.a in Frameworks */,
-				8F252AA8185C306200FA0618 /* UIKit.framework in Frameworks */,
-				8F252AA6185C306200FA0618 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				8F252A98185C306200FA0618 /* MultilevelMenu */,
-				8F252AAC185C306200FA0618 /* MultilevelMenuTests */,
 				8F252A95185C306200FA0618 /* Frameworks */,
 				8F252A94185C306200FA0618 /* Products */,
 			);
@@ -92,7 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				8F252A93185C306200FA0618 /* libMultilevelMenu.a */,
-				8F252AA3185C306200FA0618 /* MultilevelMenuTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +79,7 @@
 		8F252A95185C306200FA0618 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F252ABC185C31BF00FA0618 /* libxml2.dylib */,
 				8F252A96185C306200FA0618 /* Foundation.framework */,
 				8F252AA4185C306200FA0618 /* XCTest.framework */,
 				8F252AA7185C306200FA0618 /* UIKit.framework */,
@@ -110,9 +90,15 @@
 		8F252A98185C306200FA0618 /* MultilevelMenu */ = {
 			isa = PBXGroup;
 			children = (
-				8F252A9B185C306200FA0618 /* MultilevelMenu.h */,
-				8F252A9D185C306200FA0618 /* MultilevelMenu.m */,
+				8F252A9B185C306200FA0618 /* CNPMultilevelMenu.h */,
+				8F252A9D185C306200FA0618 /* CNPMultilevelMenu.m */,
 				8F252A99185C306200FA0618 /* Supporting Files */,
+				8F252ABE185C328200FA0618 /* CNPMultilevelMenuItemFactory.h */,
+				8F252ABF185C328200FA0618 /* CNPMultilevelMenuItemFactory.m */,
+				8F252AC1185C32EB00FA0618 /* CNPMultilevelMenuItem.h */,
+				8F252AC2185C32EB00FA0618 /* CNPMultilevelMenuItem.m */,
+				8F252AC4185C422400FA0618 /* CNPMultilevelMenuViewController.h */,
+				8F252AC5185C422400FA0618 /* CNPMultilevelMenuViewController.m */,
 			);
 			path = MultilevelMenu;
 			sourceTree = "<group>";
@@ -121,24 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				8F252A9A185C306200FA0618 /* MultilevelMenu-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8F252AAC185C306200FA0618 /* MultilevelMenuTests */ = {
-			isa = PBXGroup;
-			children = (
-				8F252AB2185C306200FA0618 /* MultilevelMenuTests.m */,
-				8F252AAD185C306200FA0618 /* Supporting Files */,
-			);
-			path = MultilevelMenuTests;
-			sourceTree = "<group>";
-		};
-		8F252AAD185C306200FA0618 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8F252AAE185C306200FA0618 /* MultilevelMenuTests-Info.plist */,
-				8F252AAF185C306200FA0618 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -163,24 +131,6 @@
 			productReference = 8F252A93185C306200FA0618 /* libMultilevelMenu.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		8F252AA2185C306200FA0618 /* MultilevelMenuTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8F252AB9185C306200FA0618 /* Build configuration list for PBXNativeTarget "MultilevelMenuTests" */;
-			buildPhases = (
-				8F252A9F185C306200FA0618 /* Sources */,
-				8F252AA0185C306200FA0618 /* Frameworks */,
-				8F252AA1185C306200FA0618 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8F252AAA185C306200FA0618 /* PBXTargetDependency */,
-			);
-			name = MultilevelMenuTests;
-			productName = MultilevelMenuTests;
-			productReference = 8F252AA3185C306200FA0618 /* MultilevelMenuTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -203,59 +153,23 @@
 			projectRoot = "";
 			targets = (
 				8F252A92185C306200FA0618 /* MultilevelMenu */,
-				8F252AA2185C306200FA0618 /* MultilevelMenuTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		8F252AA1185C306200FA0618 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8F252AB1185C306200FA0618 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8F252A8F185C306200FA0618 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F252A9E185C306200FA0618 /* MultilevelMenu.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8F252A9F185C306200FA0618 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8F252AB3185C306200FA0618 /* MultilevelMenuTests.m in Sources */,
+				8F252AC6185C422400FA0618 /* CNPMultilevelMenuViewController.m in Sources */,
+				8F252AC3185C32EB00FA0618 /* CNPMultilevelMenuItem.m in Sources */,
+				8F252A9E185C306200FA0618 /* CNPMultilevelMenu.m in Sources */,
+				8F252AC0185C328200FA0618 /* CNPMultilevelMenuItemFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		8F252AAA185C306200FA0618 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8F252A92185C306200FA0618 /* MultilevelMenu */;
-			targetProxy = 8F252AA9185C306200FA0618 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		8F252AAF185C306200FA0618 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8F252AB0185C306200FA0618 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8F252AB4185C306200FA0618 /* Debug */ = {
@@ -334,6 +248,12 @@
 				DSTROOT = /tmp/MultilevelMenu.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MultilevelMenu/MultilevelMenu-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					$SDKROOT/usr/include/libxml2,
+				);
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -346,47 +266,14 @@
 				DSTROOT = /tmp/MultilevelMenu.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MultilevelMenu/MultilevelMenu-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					$SDKROOT/usr/include/libxml2,
+				);
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		8F252ABA185C306200FA0618 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MultilevelMenu/MultilevelMenu-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "MultilevelMenuTests/MultilevelMenuTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		8F252ABB185C306200FA0618 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MultilevelMenu/MultilevelMenu-Prefix.pch";
-				INFOPLIST_FILE = "MultilevelMenuTests/MultilevelMenuTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -407,14 +294,6 @@
 			buildConfigurations = (
 				8F252AB7185C306200FA0618 /* Debug */,
 				8F252AB8185C306200FA0618 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		8F252AB9185C306200FA0618 /* Build configuration list for PBXNativeTarget "MultilevelMenuTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8F252ABA185C306200FA0618 /* Debug */,
-				8F252ABB185C306200FA0618 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
