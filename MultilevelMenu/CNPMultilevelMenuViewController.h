@@ -12,5 +12,7 @@
 @interface CNPMultilevelMenuViewController : UITableViewController<UITableViewDataSource>
 
 @property CNPMultilevelMenu *menu;
+@property NSArray *menuItems;
+@property xmlNodePtr tappedMenuNode;
 
 @end

@@ -10,10 +10,6 @@
 #import "CNPMultilevelMenu.h"
 
 @interface CNPMultilevelMenuViewController ()
-
-@property NSArray *menuItems;
-@property xmlNodePtr tappedMenuNode;
-
 @end
 
 @implementation CNPMultilevelMenuViewController
