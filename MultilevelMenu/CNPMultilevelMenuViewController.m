@@ -10,12 +10,27 @@
 
 @implementation CNPMultilevelMenuViewController
 
+- (NSURL *)getMenuConfigurationURL {
+    @throw [NSException exceptionWithName:nil reason:@"Implement this abstract method in the subclass." userInfo:nil];
+}
+
+- (id<CNPMultilevelMenuItemFactory>)getMenuItemFactory {
+    @throw [NSException exceptionWithName:nil reason:@"Implement this abstract method in the subclass." userInfo:nil];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    if (self.tappedMenuNode == nil) self.tappedMenuNode = [self.menu getMenuRootElement];
+    
+    if (self.menu == nil) {
+        self.menu = [[CNPMultilevelMenu alloc] init:[self getMenuConfigurationURL] menuItemFactory:[self getMenuItemFactory]];
+        self.tappedMenuNode = [self.menu getMenuRootElement];
+    }
+    
     self.menuItems = [self.menu parse:self.tappedMenuNode];
+    
+    // Remove empty cells from table view
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView

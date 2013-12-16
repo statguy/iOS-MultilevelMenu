@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "CNPMultilevelMenu.h"
+#import "CNPMultilevelMenuItemFactory.h"
 
 @interface CNPMultilevelMenuViewController : UITableViewController
 
