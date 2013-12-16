@@ -2,17 +2,17 @@
 //  CNPMultilevelMenuViewController.h
 //  MultilevelMenu
 //
-//  Created by Jussi on 14/12/2013.
-//  Copyright (c) 2013 Code & Pop. All rights reserved.
+//  Created by Jussi Jousimo on 14/12/2013.
+//  Copyright (c) 2013 Code & Pop tmi. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import "CNPMultilevelMenu.h"
 
-@interface CNPMultilevelMenuViewController : UITableViewController<UITableViewDataSource>
+@interface CNPMultilevelMenuViewController : UITableViewController
 
-@property CNPMultilevelMenu *menu;
-@property NSArray *menuItems;
-@property xmlNodePtr tappedMenuNode;
+@property (nonatomic, strong) CNPMultilevelMenu *menu;
+@property (nonatomic, strong) NSArray *menuItems;
+@property (nonatomic) xmlNodePtr tappedMenuNode;
 
 @end

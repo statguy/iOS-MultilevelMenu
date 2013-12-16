@@ -2,15 +2,19 @@
 //  MultilevelMenu.m
 //  MultilevelMenu
 //
-//  Created by Jussi on 14/12/2013.
-//  Copyright (c) 2013 Code & Pop. All rights reserved.
+//  Created by Jussi Jousimo on 14/12/2013.
+//  Copyright (c) 2013 Code & Pop tmi. All rights reserved.
 //
 
 #import "CNPMultilevelMenu.h"
 
-@implementation CNPMultilevelMenu
-
-- (id)init:(NSURL *)setResourceFileURL menuItemFactory:(CNPMultilevelMenuItemFactory *)setMenuItemFactory {
+@implementation CNPMultilevelMenu {
+    NSURL *resourceFileURL;
+    id<CNPMultilevelMenuItemFactory> menuItemFactory;
+    xmlDocPtr document;
+}
+    
+- (id)init:(NSURL *)setResourceFileURL menuItemFactory:(id<CNPMultilevelMenuItemFactory>)setMenuItemFactory {
     self = [super init];
     if (self) {
         resourceFileURL = setResourceFileURL;
@@ -38,32 +42,24 @@
         
         for (xmlNodePtr subnode = node->xmlChildrenNode; subnode; subnode = subnode->next) {
             if (subnode->type == XML_ELEMENT_NODE) {
-                if (!xmlStrEqual(subnode->name, (const xmlChar *)"item")) {
-                    [NSException raise:nil format:@"Not an item node under menu."];
-                    return nil;
-                }
-                CNPMultilevelMenuItem *menuItem = [menuItemFactory newMenuItem];
+                if (!xmlStrEqual(subnode->name, (const xmlChar *)"item"))
+                    @throw [NSException exceptionWithName:nil reason:@"Item node not under menu." userInfo:nil];
+                id<CNPMultilevelMenuItem> menuItem = [menuItemFactory newMenuItem];
                 [menuItem parse:subnode];
                 [items addObject:menuItem];
             }
         }
         
-        if ([items count] == 0) {
-            [NSException raise:nil format:@"No items under menu."];
-            return nil;
-        }
+        if ([items count] == 0)
+            @throw [NSException exceptionWithName:nil reason:@"No items under menu." userInfo:nil];
         
         return items;
     }
-    else {
-        [NSException raise:nil format:@"Not a menu node."];
-        return nil;
-    }
+    else
+        @throw [NSException exceptionWithName:nil reason:@"Not a menu node." userInfo:nil];
 }
 
 - (void)dealloc {
-    //[super dealloc];
-    
     if (document != NULL) {
         xmlFreeDoc(document);
         xmlCleanupParser();

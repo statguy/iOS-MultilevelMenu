@@ -11,8 +11,6 @@
 		8F252A9C185C306200FA0618 /* CNPMultilevelMenu.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8F252A9B185C306200FA0618 /* CNPMultilevelMenu.h */; };
 		8F252A9E185C306200FA0618 /* CNPMultilevelMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F252A9D185C306200FA0618 /* CNPMultilevelMenu.m */; };
 		8F252ABD185C31BF00FA0618 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F252ABC185C31BF00FA0618 /* libxml2.dylib */; };
-		8F252AC0185C328200FA0618 /* CNPMultilevelMenuItemFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F252ABF185C328200FA0618 /* CNPMultilevelMenuItemFactory.m */; };
-		8F252AC3185C32EB00FA0618 /* CNPMultilevelMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F252AC2185C32EB00FA0618 /* CNPMultilevelMenuItem.m */; };
 		8F252AC6185C422400FA0618 /* CNPMultilevelMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F252AC5185C422400FA0618 /* CNPMultilevelMenuViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -39,9 +37,7 @@
 		8F252AA7185C306200FA0618 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		8F252ABC185C31BF00FA0618 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		8F252ABE185C328200FA0618 /* CNPMultilevelMenuItemFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNPMultilevelMenuItemFactory.h; sourceTree = "<group>"; };
-		8F252ABF185C328200FA0618 /* CNPMultilevelMenuItemFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNPMultilevelMenuItemFactory.m; sourceTree = "<group>"; };
 		8F252AC1185C32EB00FA0618 /* CNPMultilevelMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNPMultilevelMenuItem.h; sourceTree = "<group>"; };
-		8F252AC2185C32EB00FA0618 /* CNPMultilevelMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNPMultilevelMenuItem.m; sourceTree = "<group>"; };
 		8F252AC4185C422400FA0618 /* CNPMultilevelMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNPMultilevelMenuViewController.h; sourceTree = "<group>"; };
 		8F252AC5185C422400FA0618 /* CNPMultilevelMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNPMultilevelMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,9 +90,7 @@
 				8F252A9D185C306200FA0618 /* CNPMultilevelMenu.m */,
 				8F252A99185C306200FA0618 /* Supporting Files */,
 				8F252ABE185C328200FA0618 /* CNPMultilevelMenuItemFactory.h */,
-				8F252ABF185C328200FA0618 /* CNPMultilevelMenuItemFactory.m */,
 				8F252AC1185C32EB00FA0618 /* CNPMultilevelMenuItem.h */,
-				8F252AC2185C32EB00FA0618 /* CNPMultilevelMenuItem.m */,
 				8F252AC4185C422400FA0618 /* CNPMultilevelMenuViewController.h */,
 				8F252AC5185C422400FA0618 /* CNPMultilevelMenuViewController.m */,
 			);
@@ -163,9 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F252AC6185C422400FA0618 /* CNPMultilevelMenuViewController.m in Sources */,
-				8F252AC3185C32EB00FA0618 /* CNPMultilevelMenuItem.m in Sources */,
 				8F252A9E185C306200FA0618 /* CNPMultilevelMenu.m in Sources */,
-				8F252AC0185C328200FA0618 /* CNPMultilevelMenuItemFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +288,7 @@
 				8F252AB8185C306200FA0618 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

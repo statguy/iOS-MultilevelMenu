@@ -2,18 +2,16 @@
 //  CNPMultilevelMenuItem.h
 //  MultilevelMenu
 //
-//  Created by Jussi on 14/12/2013.
-//  Copyright (c) 2013 Code & Pop. All rights reserved.
+//  Created by Jussi Jousimo on 14/12/2013.
+//  Copyright (c) 2013 Code & Pop tmi. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <libxml/tree.h>
 
-@interface CNPMultilevelMenuItem : NSObject
+@protocol CNPMultilevelMenuItem
 
-@property xmlNodePtr node;
+@property (nonatomic, readonly) xmlNodePtr node;
 
 - (void)parse:(xmlNodePtr)setNode;
-- (void)onSelected;
 
 @end

@@ -2,15 +2,14 @@
 //  CNPMultilevelMenuItemFactory.h
 //  MultilevelMenu
 //
-//  Created by Jussi on 14/12/2013.
-//  Copyright (c) 2013 Code & Pop. All rights reserved.
+//  Created by Jussi Jousimo on 14/12/2013.
+//  Copyright (c) 2013 Code & Pop tmi. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "CNPMultilevelMenuItem.h"
 
-@interface CNPMultilevelMenuItemFactory : NSObject
+@protocol CNPMultilevelMenuItemFactory
 
-- (CNPMultilevelMenuItem *)newMenuItem;
+- (id<CNPMultilevelMenuItem>)newMenuItem;
 
 @end
