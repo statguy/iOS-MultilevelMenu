@@ -24,7 +24,7 @@
 }
 
 - (xmlNodePtr)getMenuRootElement {
-    const char *resourceFilePath = [resourceFileURL fileSystemRepresentation];
+    const char *resourceFilePath = [[resourceFileURL path] cStringUsingEncoding:NSUTF8StringEncoding];
     document = xmlReadFile(resourceFilePath, NULL, 0);
     if (document == NULL) {
         [NSException raise:nil format:@"Failed to parse XML at %@.", resourceFileURL];
